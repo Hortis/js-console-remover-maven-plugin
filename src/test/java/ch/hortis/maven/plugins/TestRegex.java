@@ -15,7 +15,7 @@ import static org.fest.assertions.Assertions.assertThat;
 
 public class TestRegex {
 
-    private String pattern = "\\s*console\\.(log|warn|error|info)\\(.+\\);\\s*";
+    private String pattern = "console\\.(log|warn|error|info)\\(.+\\);";
     Pattern p = Pattern.compile(pattern);
 
 
