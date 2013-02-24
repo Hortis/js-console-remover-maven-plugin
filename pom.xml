@@ -25,7 +25,7 @@
         <guava.version>13.0.1</guava.version>
         <plexus-build-api.version>0.0.7</plexus-build-api.version>
         <maven-plugin-api.version>3.0.3</maven-plugin-api.version>
-        <plexus-utils.version>3.0.7</plexus-utils.version>
+        <plexus-utils.version>3.0.10</plexus-utils.version>
     </properties>
 
     <dependencies>
