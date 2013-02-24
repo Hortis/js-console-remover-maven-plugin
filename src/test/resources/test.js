@@ -33,6 +33,8 @@ define(['backbone', //
                         url: '/users/' + e,
 
                         success: function (response) {
+                           console.log();
+                           console.log( );
                            console.log("response : " + response);
                         },
                         error: function(error) {

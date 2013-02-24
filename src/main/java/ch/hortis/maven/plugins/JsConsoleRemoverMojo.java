@@ -74,7 +74,7 @@ public class JsConsoleRemoverMojo extends AbstractMojo {
     private String[] excludes = new String[] {};
 
 
-    private String pattern = "console\\.(log|warn|error|info)\\(.+\\);";
+    private String pattern = "(window\\.)?console\\.(log|warn|error|info)\\(.*\\);";
     private Pattern p = Pattern.compile(pattern);
 
     /**

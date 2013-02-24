@@ -15,14 +15,14 @@ import static org.fest.assertions.Assertions.assertThat;
 
 public class TestRegex {
 
-    private String pattern = "console\\.(log|warn|error|info)\\(.+\\);";
+    private String pattern = "(window\\.)?console\\.(log|warn|error|info)\\(.*\\);";
     Pattern p = Pattern.compile(pattern);
 
 
     @Test
     public void shouldContainConsoleLog() throws IOException, URISyntaxException {
         String content = readInputStreamAsString(this.getClass().getResourceAsStream("/test.js"));
-        assertThat(countOccurrenceOfPattern(content)).isEqualTo(5);
+        assertThat(countOccurrenceOfPattern(content)).isEqualTo(7);
     }
 
     private int countOccurrenceOfPattern(String content) {
